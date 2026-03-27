@@ -1,0 +1,1 @@
+Router.get('/task', getTasks);
