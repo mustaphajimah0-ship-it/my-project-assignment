@@ -19,10 +19,10 @@ function throws(fn) {
 }
 
 function testDomain() {
-  const ama = store.authenticate("ama@apexathletic.club", "2468");
+  const ama = store.authenticate("ama@acefitness.club", "2468");
   assert.ok(ama && ama.role === "manager");
-  assert.equal(store.authenticate("ama@apexathletic.club", "0000"), null);
-  assert.equal(store.authenticate("kojo@apexathletic.club", "1357").role, "frontdesk");
+  assert.equal(store.authenticate("ama@acefitness.club", "0000"), null);
+  assert.equal(store.authenticate("kojo@acefitness.club", "1357").role, "frontdesk");
 
   const dash = store.dashboard();
   assert.ok(dash.kpis.active >= 40, "expected a full active roster");
@@ -190,7 +190,7 @@ async function testHttp() {
     const login = await fetch(`${base}/api/auth/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email: "kojo@apexathletic.club", pin: "1357" }),
+      body: JSON.stringify({ email: "kojo@acefitness.club", pin: "1357" }),
     });
     assert.equal(login.status, 200);
     const session = await login.json();

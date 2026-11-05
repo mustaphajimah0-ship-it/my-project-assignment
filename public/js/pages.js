@@ -363,7 +363,7 @@ const Pages = {
           ${data.items.map((trainer) => `
             <article class="card coach-card">
               <div class="who">${avatar(trainer)}<span><strong>${fmt.esc(trainer.name)}</strong><small>${fmt.esc(trainer.title)}</small></span></div>
-              <p>${fmt.esc(trainer.bio || "Coach on the Apex roster.")}</p>
+              <p>${fmt.esc(trainer.bio || "Coach on the ACE FITNESS roster.")}</p>
               <div class="chips">${(trainer.specialties || []).map((item) => `<span class="badge">${fmt.esc(item)}</span>`).join("")}</div>
               <small class="muted">${trainer.classCount} classes · ${trainer.memberCount} members</small>
               ${App.can("manageTrainers") ? `<button class="btn" type="button" data-action="edit-trainer" data-id="${fmt.esc(trainer.id)}">Edit</button>` : ""}
@@ -669,7 +669,7 @@ function downloadCsv(members) {
   const blob = new Blob([lines.join("\n")], { type: "text/csv" });
   const link = document.createElement("a");
   link.href = URL.createObjectURL(blob);
-  link.download = "apex-members.csv";
+  link.download = "ace-fitness-members.csv";
   link.click();
   URL.revokeObjectURL(link.href);
 }

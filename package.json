@@ -1,7 +1,7 @@
 {
-  "name": "apex-athletic-club",
+  "name": "ace-fitness",
   "version": "1.0.0",
-  "description": "Apex Athletic Club operations platform — members, front desk, classes, and billing.",
+  "description": "ACE FITNESS operations platform — members, front desk, classes, and billing.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

@@ -41,9 +41,9 @@ const NAV = [
 ];
 
 const DEMOS = [
-  ["Ama Mensah", "General manager", "ama@apexathletic.club", "2468"],
-  ["Kojo Boateng", "Front desk lead", "kojo@apexathletic.club", "1357"],
-  ["Nadia Sule", "Head of coaching", "nadia@apexathletic.club", "9081"],
+  ["Ama Mensah", "General manager", "ama@acefitness.club", "2468"],
+  ["Kojo Boateng", "Front desk lead", "kojo@acefitness.club", "1357"],
+  ["Nadia Sule", "Head of coaching", "nadia@acefitness.club", "9081"],
 ];
 
 let generation = 0;
@@ -55,8 +55,8 @@ function shell() {
         <div class="mark">
           <div class="mark-badge">${ui.icon("home")}</div>
           <div>
-            <strong id="club-name">Apex</strong>
-            <span>Club operations</span>
+            <strong id="club-name">ACE</strong>
+            <span>Fitness</span>
           </div>
         </div>
         <nav class="side-nav">
@@ -151,7 +151,7 @@ function loginScreen() {
       <div class="login-brand">
         <div class="mark">
           <div class="mark-badge">${ui.icon("home")}</div>
-          <div><strong>Apex</strong><span>Athletic Club</span></div>
+          <div><strong>ACE</strong><span>Fitness</span></div>
         </div>
         <div>
           <h1>The house, run properly.</h1>
@@ -168,7 +168,7 @@ function loginScreen() {
           <h2>Sign in</h2>
           <p class="lede">Use the desk you are covering. Credentials below are for this club.</p>
           <form class="stack" data-action="login">
-            <label class="field"><span>Email</span><input name="email" type="email" autocomplete="username" required value="ama@apexathletic.club"></label>
+            <label class="field"><span>Email</span><input name="email" type="email" autocomplete="username" required value="ama@acefitness.club"></label>
             <label class="field"><span>PIN</span><input name="pin" inputmode="numeric" autocomplete="current-password" required value="2468"></label>
             <button class="btn btn-primary" type="submit">Enter the floor</button>
           </form>
@@ -241,7 +241,7 @@ async function route() {
     else {
       view.innerHTML = `<section class="page"><div class="empty"><h2>That page is not on the floor plan.</h2><p><a href="#/">Back to the dashboard</a></p></div></section>`;
     }
-    document.title = "Apex · Club operations";
+    document.title = "ACE FITNESS";
   } catch (error) {
     if (!ctx.alive() || error.status === 401) return;
     view.innerHTML = `<section class="page"><div class="empty"><h2>This view did not load</h2><p>${fmt.esc(error.message)}</p><button class="btn" type="button" data-action="retry">Try again</button></div></section>`;
