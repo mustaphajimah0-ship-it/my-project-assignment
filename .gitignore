@@ -1,3 +1,9 @@
 node_modules/
 data/store.json
 data/store.json.tmp
+.firebase/
+firebase-debug.log
+functions/lib/
+functions/routes/
+functions/server.js
+functions/node_modules/

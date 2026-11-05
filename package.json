@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "node scripts/smoke.js"
+    "test": "node scripts/smoke.js",
+    "deploy": "node scripts/deploy-firebase.js"
   },
   "license": "ISC",
   "type": "commonjs",
