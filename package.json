@@ -1,15 +1,17 @@
 {
-  "name": "project-work",
+  "name": "apex-athletic-club",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Apex Athletic Club operations platform — members, front desk, classes, and billing.",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "test": "node scripts/smoke.js"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
     "express": "^5.2.1"
   }
